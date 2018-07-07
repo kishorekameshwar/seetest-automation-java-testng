@@ -3,10 +3,8 @@ package io.seetest.automation;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 
-public class IOSApplicationTestBase extends TestBase
+public class IOSApplicationTest extends TestBase
 {
-
-    private static final String IOS_CLOUD_APPLICATION_NAME = "cloud:com.experitest.ExperiBank";
     @Parameters("deviceQuery")
     @BeforeClass
     public void setUpTestClass(@Optional("@os='ios'") String deviceQuery, ITestContext testContext) {

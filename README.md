@@ -23,13 +23,51 @@ note :  you need to have a valid subscription or a trial to run this test (Trial
 
 After you have obtained a valid key change the seetest.properties file with your own copy
 
-```access.key = <your copy>``` 
+```
+# /src/main/java/resources/seetest.properties
+access.key = <your copy>
+
+``` 
+2. Upload the eribank application to your project
+Download the Android app : https://experitest.s3.amazonaws.com/eribank.apk
+Download the iOS app : https://experitest.s3.amazonaws.com/EriBank.ipa
+
+Go to the cloud "Mobile Application Center" and upload both apps 
+https://cloud.seetest.io/index.html#/applications
 
 3. run the testng.xml file
 
 Right click on the file and run from IntelliJ \ Eclipse 
 Or use the command line : 
 
-```$xslt
+```
 gradlew runTests
 ```
+
+### How to change to your own application
+
+1. Upload you application to the cloud
+
+(review step two in guide)
+
+2. Change the android application name or iOS application name in the seetest.properties file
+
+```
+# /src/main/java/resources/seetest.properties
+ios.app.name = com.company.app
+android.app.name = com.company.app/.appActivity
+
+``` 
+
+3. Copy your project base directory to the app properties file
+```
+# /src/main/java/resources/seetest.properties
+# you can place a full path e.g C:\\projectbasedir OR ~/projectbasedir
+project.base.directory="SeeTestProject"
+```
+
+4. Modify the tests 
+
+change the @Test methods at AndroidApplicationTest \ IOSApplicationTest
+
+following the code you've exported from SeeTestAutomation 

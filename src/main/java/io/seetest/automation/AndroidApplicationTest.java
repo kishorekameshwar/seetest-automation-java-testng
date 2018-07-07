@@ -12,8 +12,6 @@ import org.testng.annotations.Test;
  */
 public class AndroidApplicationTest extends TestBase {
 
-    private static final String ANDROID_CLOUD_APPLICATION_NAME = "cloud:com.experitest.ExperiBank/.LoginActivity";
-
     @Parameters("deviceQuery")
     @BeforeClass
     public void setUpTestClass(@Optional("@os='android'") String deviceQuery, ITestContext testContext) {

@@ -12,7 +12,7 @@
     <test name="iOS Test">
         <parameter name="deviceQuery" value="@os='ios'"/>
         <classes>
-            <class name="io.seetest.automation.IOSApplicationTestBase"/>
+            <class name="io.seetest.automation.IOSApplicationTest"/>
         </classes>
     </test>
 
