@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><domain fixed="false" fullWindow="true" name="default">
+<obj text="Username" version="1">
+<images enable="true">
+<image file="default\Username.PNG" jump="1" mainColor="-70708" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.widget.EditText" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="usernameTextField" method="id" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Username" textBB="" textIOS="" textWP="" value="usernameTextField" xpath="//*[@id='usernameTextField']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Password" version="1">
+<images enable="true">
+<image file="default\Passwor.PNG" jump="1" mainColor="-80809" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.widget.EditText" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="passwordTextField" method="id" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="" textBB="" textIOS="" textWP="" value="passwordTextField" xpath="//*[@id='passwordTextField']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+<obj text="Login" version="1">
+<images enable="true">
+<image file="default\Login.PNG" jump="1" mainColor="-1b1b1c" max="0" min="0" scanner="Advance Similarity" similarity="97"/>
+</images>
+<text color="2147483647" enable="false" filter="false" ignoreCase="false" regexp="false" sensitivity="10" text=""/>
+<native aiIOS="" alIOS="" class="android.widget.Button" classBB="" classIOS="" classWP="" contentDescription="" contentWP="" enable="true" enableBB="false" enableIOS="false" enableWP="false" hint="" id="loginButton" method="id" methodBB="class" methodIOS="class" methodWP="class" nameWP="" placeholderIOS="" scriptIOS="" text="Login" textBB="" textIOS="" textWP="" value="loginButton" xpath="//*[@text='Login']" xpathIOS="" xpathWP=""/>
+<web enable="false" method="" value=""/>
+</obj>
+</domain>

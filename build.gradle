@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+}
+
+group 'io.seetest'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://cloud.experitest.com/repo/"
+    }
+
+}
+
+sourceSets {
+    main {
+        runtimeClasspath = files(output.resourcesDir) + runtimeClasspath
+    }
+    test{
+        runtimeClasspath = main.runtimeClasspath
+    }
+}
+
+dependencies {
+    compile (group: 'com.experitest', name: 'seetest-client', version: '11.8')
+            {
+                exclude  group: 'junit', module: 'junit'
+            }
+    compile 'org.slf4j:slf4j-api:1.7.23'
+    compile 'org.slf4j:slf4j-log4j12:1.7.7'
+    compile "org.testng:testng:6.8.8"
+}
+
+
+task runTests(type: JavaExec, dependsOn: 'classes') {
+    main = 'org.testng.TestNG'
+    classpath = files("./src/test/resources",
+            project.sourceSets.main.compileClasspath,
+            project.sourceSets.test.compileClasspath,
+            project.sourceSets.main.runtimeClasspath,
+            project.sourceSets.test.runtimeClasspath)
+    args = ["./build/test-output", "./testng.xml"]
+}

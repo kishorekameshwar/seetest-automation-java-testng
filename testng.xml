@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="seetest - Suite Execution" parallel="tests" thread-count="10">
+
+    <test name="Android Test">
+        <parameter name="deviceQuery" value="@os='android'"/>
+        <classes>
+            <class name="io.seetest.automation.AndroidApplicationTest"/>
+        </classes>
+    </test>
+
+    <test name="iOS Test">
+        <parameter name="deviceQuery" value="@os='ios'"/>
+        <classes>
+            <class name="io.seetest.automation.IOSApplicationTestBase"/>
+        </classes>
+    </test>
+
+</suite>
