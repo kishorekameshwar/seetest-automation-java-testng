@@ -70,4 +70,6 @@ project.base.directory="SeeTestProject"
 
 change the @Test methods at AndroidApplicationTest \ IOSApplicationTest
 
-following the code you've exported from SeeTestAutomation 
+you can paste the code you've exported from SeeTestAutomation 
+
+
